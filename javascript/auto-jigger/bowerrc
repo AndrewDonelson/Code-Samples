@@ -1,0 +1,8 @@
+{
+  "cwd": "~/www",
+  "directory": "assets/lib",
+
+  "ignoredDependencies": [
+    "jquery"
+  ]
+}
