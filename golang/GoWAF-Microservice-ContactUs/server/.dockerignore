@@ -1,0 +1,11 @@
+.env
+.editorconfig
+.git
+.github
+.vscode
+.cache
+*.md
+*.exe
+LICENSE
+Makefile
+_design/

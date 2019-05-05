@@ -1,0 +1,14 @@
+.env
+.editorconfig
+.git
+.github
+.vscode
+.cache
+*.md
+*.exe
+LICENSE
+Makefile
+_design/
+Gruntfile.js
+package.json
+Gopkg.*

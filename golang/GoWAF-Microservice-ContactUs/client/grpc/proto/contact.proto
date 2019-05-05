@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package go.micro.srv.contact;
+
+service ContactMicro {
+	rpc Create(CreateRequest) returns (CreateResponse) {}
+	rpc View(ViewRequest) returns (ViewResponse) {}
+	rpc List(Empty) returns (ListResponse) {}
+}
+
+message CreateRequest {
+	string name = 2;
+	string email = 3;
+	string message = 4;
+	string category = 5;
+}
+
+message CreateResponse {
+	string errMsg = 1;
+}
+
+message ViewRequest {
+	string contactID = 1;
+}
+
+message ViewResponse {
+	Contact contact = 1;
+}
+
+message Empty {}
+
+message ListResponse {
+	repeated  Contact contacts = 1;
+	string errMsg = 2;
+}
+
+message Contact {
+	string contactID = 1;
+	string name = 2;
+	string email = 3;
+	string message = 4;
+	string category = 5;
+	string errMsg = 6;
+	string createdAt = 7;
+}

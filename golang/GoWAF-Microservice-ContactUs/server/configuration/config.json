@@ -1,0 +1,12 @@
+{
+  "database":{
+    "db_name" : "postgres",
+    "password" : "nlaak",
+    "db_type" : "postgres"
+  },
+
+  "general":{
+    "service_name" : "go.micro.srv.contact",
+    "version" : "latest"
+  }
+}
